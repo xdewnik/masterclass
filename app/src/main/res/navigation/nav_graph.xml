@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/tourFragment">
+
+    <fragment
+        android:id="@+id/tourFragment2"
+        android:name="com.coolya.masterclass.ui.fragment.tour.TourFragment"
+        android:label="TourFragment" />
+    <fragment
+        android:id="@+id/tourFragment"
+        android:name="com.coolya.masterclass.ui.fragment.tour.TourFragment"
+        android:label="TourFragment" >
+        <action
+            android:id="@+id/action_tourFragment_to_tourFragment2"
+            app:destination="@id/tourFragment2" />
+    </fragment>
+</navigation>
